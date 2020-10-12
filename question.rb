@@ -2,7 +2,7 @@
 class Question
   attr_accessor :player, :random1, :random2, :correct_answer, :player_answer, :answer_correct
   
-  def initialize (player)
+  def initialize(player)
     @player = player
     @random1 = rand(1..20)
     @random2 = rand(1..20)
