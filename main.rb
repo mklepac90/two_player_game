@@ -7,7 +7,7 @@ player1 = Player.new('Player One')
 player2 = Player.new('Player Two')
 
 # # Initialize New Turn
-# turn = TurnCounter.new(player1.name, player2.name)
+# turn = TurnCounter.new()
 
 # # New turn
 # turn.new_turn
