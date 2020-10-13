@@ -38,11 +38,7 @@ player2 = Player.new('Player Two')
 
 i = 1
 loop do
-  if i.odd? == true
-    player = player1
-  else
-    player = player2
-  end
+  player = i.odd? ? player1 : player2
 
   turn = TurnCounter.new()
 
@@ -54,9 +50,7 @@ loop do
 
   question.validate_answer
 
-  if question.answer_correct == 0
-    player.lives -= 1
-  end
+  question.answer_correct == 0 ? player.lives -= 1 : nil
 
   turn.current_score(player1.lives, player2.lives)
   
