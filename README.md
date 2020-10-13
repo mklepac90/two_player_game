@@ -1,5 +1,6 @@
 
-  Nouns/Classes:
+  ## Classes:
+    
     - player
       .Initialized with player name and starting lives (state)
       .Tracks the players involved in the game (state)
@@ -17,7 +18,7 @@
     -turn_counter
       .informs players of score (method)
       .informs players that a new turn is beginning (method)
-      .informs players when game is over and returns final score
+      .informs players when game is over and returns final score (method)
 
 
 
