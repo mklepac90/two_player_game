@@ -36,6 +36,41 @@ player2 = Player.new('Player Two')
 #   turn.final_score(player1, player1.lives)
 # end
 
+i = 1
+loop do
+  if i.odd? == true
+    player = player1
+  else
+    player = player2
+  end
+
+  turn = TurnCounter.new()
+
+  turn.new_turn
+
+  question = Question.new(player.name)
+
+  question.accept_answer
+
+  question.validate_answer
+
+  if question.answer_correct == 0
+    player.lives -= 1
+  end
+
+  turn.current_score(player1.lives, player2.lives)
+  
+  if player1.lives == 0
+    turn.final_score(player2.name, player2.lives)
+    break
+  elsif player2.lives == 0
+    turn.final_score(player1.name, player1.lives)
+    break
+  end
+  
+  i += 1
+end
+
 
 
 
