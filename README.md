@@ -5,7 +5,7 @@
       .Initialized with player name and starting lives (state)
       .Tracks the players involved in the game (state)
       .Tracks the number of lives available to the player (state)
-      .Adjust lives based on question validation, no method needed
+      .Adjust lives based on question validation (method)
 
     - question
       .Initializes with variables representing random integers (state)

@@ -50,7 +50,7 @@ loop do
 
   question.validate_answer
 
-  question.answer_correct == 0 ? player.lives -= 1 : nil
+  question.answer_correct == 0 ? player.lose_life : nil
 
   turn.current_score(player1.lives, player2.lives)
   
